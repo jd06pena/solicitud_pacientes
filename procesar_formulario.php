@@ -23,7 +23,7 @@ $fecha_solicitada = $_POST['fecha_solicitada'];
 
 
 // Insertar los datos en la tabla
-$sql = "INSERT INTO solicitud_paciente (nombre_solicitante, nombre_paciente, cedula_paciente, examen,  telefonos, fecha_solicitada) VALUES ('$nombre_solicitante', '$nombre_paciente', '$cedula_paciente', '$examen', '$telefonos', '$fecha_solicitada')";
+$sql = "INSERT INTO solicitud_pacientes (nombre_solicitante, nombre_paciente, cedula_paciente, examen,  telefonos, fecha_solicitada) VALUES ('$nombre_solicitante', '$nombre_paciente', '$cedula_paciente', '$examen', '$telefonos', '$fecha_solicitada')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Datos insertados correctamente";
