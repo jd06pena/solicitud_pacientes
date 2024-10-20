@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>SOLICITA TU CITA AL INSTANTE</h1>
-    <form id="formularioRegistro">
+    <form action="procesar_formulario.php"  id="formularioRegistro"  method="POST">
+    
         <div>
             <label for="nombre_solicitante">Nombre del quien solicita:</label>
             <input type="text" id="nombre_solicitante" name="nombre_solicitante" required>
@@ -35,6 +36,7 @@
         </div>
         
         <button type="submit">Solicitar Cita</button>
+
     </form>
     <p id="mensaje"></p>
 
