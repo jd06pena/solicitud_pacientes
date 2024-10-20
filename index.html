@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLICITA TU CITA AL INSTANTE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SOLICITA TU CITA AL INSTANTE</h1>
+    <form id="formularioRegistro">
+        <div>
+            <label for="nombre_solicitante">Nombre del quien solicita:</label>
+            <input type="text" id="nombre_solicitante" name="nombre_solicitante" required>
+        </div>
+        <div>
+            <label for="nombre_paciente">Nombre del paciente:</label>
+            <input type="text" id="nombre_paciente" name="nombre_paciente" required>
+        </div>
+        <div>
+            <label for="number">Cedula del paciente:</label>
+            <input type="number" id="cedula_paciente" name="cedula_paciente" required>
+        </div>
+        <div>
+            <label for="Examen">Examen:</label>
+            <input type="text" id="examen" name="examen" required>
+        </div>
+        <div>
+            <label for="Examen">Telefonos:</label>
+            <input type="number" id="telefonos" name="telefonos" required>
+        </div>
+        <div>
+            <label for="edad">Fecha solicitada:</label>
+            <input type="date" id="fecha_solicitada" name="fecha_solicitada" required>
+        </div>
+        
+        <button type="submit">Solicitar Cita</button>
+    </form>
+    <p id="mensaje"></p>
+
+    <!-- <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>Nombre del quien solicita</th>
+            <th>Nombre del paciente:</th>
+            <th>Cedula del paciente:</th>
+            <th>Examen</th>
+            <th>Fecha solicitada:</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table> -->
+
+
+
+    <ul id="listaPacientes"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
